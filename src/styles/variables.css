@@ -1,0 +1,53 @@
+
+:root {
+    /* --- LIGHT THEME (Google Antigravity Inspired) --- */
+    --bg: hsla(210, 30%, 96%, 1);           /* Soft blue-gray background, close to $F0F4F8 */
+    --surface: hsla(0, 0%, 100%, 1);        /* Pure white for cards, $FFFFFF */
+    --primary: hsla(232, 82%, 71%, 1);      /* Periwinkle accent */
+    --primary-muted: hsla(232, 82%, 85%, 1); /* Lighter periwinkle */
+    --secondary: hsla(220, 15%, 65%, 1);    /* Soft gray */
+    
+    --text-main: hsla(210, 30%, 24%, 1);    /* Deep charcoal */
+    --text-sub: hsla(210, 15%, 45%, 1);     /* Medium gray */
+    --border: hsla(210, 20%, 90%, 1);       /* Light gray border */
+    --shadow: 0 4px 12px hsla(0, 0%, 0%, 0.05); /* Subtle shadow */
+
+    --ff-primary: 'Google Sans',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    --fs-md: 2rem;
+    --fs-sm: 1.5rem;
+    --fs-base: 1rem;
+    --fs-xs: 0.875rem;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 600;
+
+    /* --- SPACING SYSTEM (8px Base) --- */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-xxl: 48px;
+
+    /* --- RADIUS --- */
+    --radius-lg: 24px;   /* For main containers */
+    --radius-md: 12px;   /* For cards/buttons */
+    --radius-pill: 9999px;
+
+    /* --- ANIMATION --- */
+    --transition: 0.2s ease;
+}
+
+/* --- PASTEL DARK MODE --- */
+body.dark-theme {
+    --bg: hsla(210, 25%, 12%, 1);           /* Soft dark blue-gray */
+    --surface: hsla(210, 25%, 18%, 1);      /* Lighter dark surface */
+    --primary: hsla(212, 45%, 78%, 1);      /* Muted pastel blue */
+    --primary-muted: hsla(212, 45%, 65%, 1); /* Slightly darker pastel blue for active states */
+    --secondary: hsla(220, 10%, 45%, 1);    /* Soft muted gray for dark mode secondary */
+    
+    --text-main: hsla(210, 20%, 94%, 1);    /* Off-white text */
+    --text-sub: hsla(210, 10%, 75%, 1);     /* Muted gray text */
+    --border: hsla(210, 20%, 25%, 0.36);    /* Subtle dark border */
+    --shadow: 0 8px 24px hsla(0, 0%, 0%, 0.2); /* More prominent shadow for dark mode depth */
+}

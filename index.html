@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shelf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=border_all" />
+    <script src="https://kit.fontawesome.com/3b06dad15d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./src/styles/variables.css">
+    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="stylesheet" href="./src/styles/queries.css">
+    <script src="./src/app.js" defer></script>
+</head>
+<body class="dark-theme">
+    <div class="dashboard">
+        <header class="full-width flex">
+            <div class="container">
+                <div class="header-wrap flex">
+                    <div class="logo flex">
+                        <span class="material-symbols-outlined logo-icon">
+                        border_all
+                        </span>
+                        <h1>Shelf</h1>
+                    </div>
+                    <div class="input-wrap flex">
+                        <label for="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </label>
+                        <input type="text" name="search" id="search" placeholder="Search your ideas here..." autocomplete="off">
+                    </div>
+                    <div class="header-btns flex">
+                        <button class="header-btn unread">
+                            <i class="fa-solid fa-bell"></i>
+                        </button>
+                        <button class="header-btn">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <button class="header-btn menu-bars">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <div class="user-pfp"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <aside class="sidebar">
+           <p class="nav-tag">Dashboard</p>
+           <nav class="navbar-links flex">
+            <button class="flex nav-btn active" data-id="home">
+                <i class="fa-solid fa-house"></i>
+                <span class="navbar-text">
+                    Home
+                </span>
+            </button>
+            <button class="flex nav-btn" data-id="ideas">
+                <i class="fa-solid fa-lightbulb"></i>
+                <span class="navbar-text">
+                    All Ideas
+                </span>
+            </button>
+            <button class="flex nav-btn" data-id="favorites">
+                <i class="fa-solid fa-heart"></i>
+                <span class="navbar-text">
+                    Favorites
+                </span>
+            </button>
+            <button class="flex nav-btn" data-id="archives">
+                <i class="fa-solid fa-box-archive"></i>
+                <span class="navbar-text">
+                    Archived
+                </span>
+            </button>
+            <button class="flex nav-btn" data-id="trash">
+                <i class="fa-solid fa-trash-can"></i>
+                <span class="navbar-text">
+                    Trash
+                </span>
+            </button>
+           </nav>
+        </aside>
+        <main>
+            <div class="container">
+                <section id="home" class="tabs visible">
+                    <h2>Recent Ideas</h2>
+                </section>
+                <section id="ideas" class="tabs">
+                    <h2>Ideas</h2>
+                </section>
+                <section id="favorites" class="tabs">
+                    <h2>Favorites</h2>
+                </section>
+                <section id="archives" class="tabs">
+                    <h2>Archived</h2>
+                </section>
+                <section id="trash" class="tabs">
+                    <h2>Trash</h2>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
